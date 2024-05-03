@@ -8,38 +8,41 @@
   </head>
 
   <body>
-    <h1>Добавить товар</h1>
+    <section class="add-product">
+      <h1 class="add-product__title">Добавить товар</h1>
 
-    <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
-      <fieldset>
-        <label> Наименование
-          <input type="text" name="name">
-        </label>
-        <label> Категория
-          <input type="text" name="category">
-        </label>
-        <label>Единицы измерения
-          <input type="text" name="units">
-        </label>
-        <label>Дисконт
-          <input type="checkbox">
-          <input type="text" name="discont" disabled>
-        </label>
-        <label> Описание
-          <textarea name="description" cols="30" rows="10"></textarea>
-        </label>
-        <label>Количество
-          <input type="number" name="count">
-        </label>
-        <label>Цена
-          <input type="number" name="price">
-        </label>
-        <label>
-          <input type="file" name="image" accept="image/*">
-        </label>
-      </fieldset>
-      <button type="submit">Добавить товар</button>
-    </form>
+      <form class="add-product__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <fieldset class="add-product__form-fieldset">
+          <label class="add-product__form-label"> Наименование
+            <input class="add-product__form-input" type="text" name="name">
+          </label>
+          <label class="add-product__form-label"> Категория
+            <input class="add-product__form-input" type="text" name="category">
+          </label>
+          <label class="add-product__form-label">Единицы измерения
+            <input class="add-product__form-input" type="text" name="units">
+          </label>
+          <label class="add-product__form-label">Дисконт
+            <input class="add-product__form-input" type="checkbox">
+            <input class="add-product__form-input" type="text" name="discont" disabled>
+          </label>
+          <label class="add-product__form-label"> Описание
+            <textarea class="add-product__form-textarea" name="description" cols="30" rows="10"></textarea>
+          </label>
+          <label class="add-product__form-label">Количество
+            <input class="add-product__form-input" type="number" name="count">
+          </label>
+          <label class="add-product__form-label">Цена
+            <input class="add-product__form-input" type="number" name="price">
+          </label>
+          <label class="add-product__form-label">
+            <input class="add-product__form-input" type="file" name="image" accept="image/*">
+          </label>
+        </fieldset>
+        <button class="add-product__form-button" type="submit">Добавить товар</button>
+      </form>
+    </section>
+    
   </body>
 
 </html>
