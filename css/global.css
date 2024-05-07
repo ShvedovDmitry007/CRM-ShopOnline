@@ -7,6 +7,10 @@
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+  --white: #FFFFFF;
+  --smoky-white: #EEEEEE;
+  --phantom-white: #F4F2FF;
+
 }
 
 *,
@@ -22,10 +26,10 @@ body {
   min-height: 100vh;
   font-family: 'Inter', Arial, sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   text-transform: uppercase;
   color: #6e6893;
-  background-color: #fff;
+  background-color: #E5E5E5;
 }
 
 button {
@@ -42,8 +46,3 @@ fieldset {
   margin: 0;
 }
 
-.container {
-  max-width: 792px;
-  padding: 0 106px;
-  margin: 0 auto;
-}

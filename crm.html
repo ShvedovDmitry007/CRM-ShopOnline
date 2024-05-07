@@ -10,18 +10,19 @@
 </head>
 
 <body>
-  <section class="modal">
-
-    <div class="container modal__container">
-      <h2 class="modal__title">Добавить товар</h2>
-
-      <button class="modal__close-button">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
-          <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
-        </svg>
-      </button>
-
+  <div class="overlay overlay_active">
+    <div class="modal">
+      <div class="modal__header">
+        <h2 class="modal__title">Добавить товар</h2>
+  
+        <button class="modal__close-button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
+            <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+  
       <form class="modal__form add-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
 
         <fieldset class="add-form__group">
@@ -56,12 +57,13 @@
         </fieldset>
 
       </form>
-
+  
       <button class="modal__form-btn" type="submit">Добавить товар</button>
 
     </div>
+  </div>
+  
 
-  </section>
   
 </body>
 </html>
